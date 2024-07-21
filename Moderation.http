@@ -1,0 +1,6 @@
+@Moderation_HostAddress = http://localhost:5249
+
+GET {{Moderation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
