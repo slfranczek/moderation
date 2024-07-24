@@ -12,10 +12,17 @@ public class PostRepository
         _context = context;
     }
 
+    public async Task<List<Post>> GetAllPostsAsync()
+    {
+        return await _context.Posts.ToListAsync();
+    }
+    
     public async Task<List<Post>> GetUnreviewedPostsAsync()
     {
         return await _context.Posts
                              .Where(p => !p.IsReviewed)
                              .ToListAsync();
     }
+
+    
 }
