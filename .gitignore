@@ -1,6 +1,7 @@
+wwwroot/
 bin/
 obj/
-*.user
+*.user 
 *.suo
 *.dll
 *.exe

@@ -31,5 +31,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseStaticFiles();
+app.MapFallbackToFile("/review-client/{*path:nonfile}", "/review-client/index.html");
 
 app.Run();
